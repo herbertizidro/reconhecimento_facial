@@ -7,9 +7,6 @@ def criaArquivoDeRotulo(diretorio):
     label = 0
     f = open("TRAIN", "w+")
     for dir_principal, nome_dirs, nome_arqs in os.walk(diretorio):
-        print(dir_principal)
-        print(nome_dirs)
-        print(nome_arqs)
         for sub_dir in nome_dirs:
             caminho_dir = os.path.join(dir_principal, sub_dir)
             for arq in os.listdir(caminho_dir):
