@@ -51,7 +51,7 @@ def main():
     criaArquivoDeRotulo("data")
     #lê o arquivo e constrói um dicionário dos dados
     f = open("TRAIN", "r")
-    dicionarioDeFotos = criaDicionarioDeImagens(f)
+    dicionario_fotos = criaDicionarioDeImagens(f)
     treinaModelo(dicionarioDeFotos)
 
 
